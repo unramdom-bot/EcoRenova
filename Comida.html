@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comida - EcoMarket</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Barra de navegación -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">EcoMarket</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="comida.html" class="active">Comida</a></li>
+        <li><a href="carrito.html">Carrito 🛒</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Sección de productos -->
+  <main class="productos-container">
+    <h1> Sección de ECODRINK</h1>
+    <div class="productos-grid">
+      
+      <div class="producto">
+        <img src="https://images.pexels.com/photos/34040955/pexels-photo-34040955.jpeg" alt="EcoSkin">
+        <h3>EcoDrink Citrus</h3>
+        <p>🍊naranja + limón</p>
+        <span>S/ 9.00</span>
+        <button class="agregar-carrito" 
+          data-nombre="Citrus" 
+          data-precio="9">Agregar al carrito</button>
+      </div>
+
+      <div class="producto">
+        <img src="https://images.pexels.com/photos/8963452/pexels-photo-8963452.jpeg" alt="EcoDrink Tropical">
+        <h3>EcoDrink Tropical</h3>
+        <p> 🥭🍍piña + maracuyá</p>
+        <span>S/ 9.50</span>
+        <button class="agregar-carrito" 
+          data-nombre="EcoDrink Tropical" 
+          data-precio="9.5">Agregar al carrito</button>
+      </div>
+
+      <div class="producto">
+        <img src="https://images.pexels.com/photos/34018774/pexels-photo-34018774.jpeg" alt="EcoDrink Berry">
+        <h3>EcoDrink Berry</h3>
+        <p> 🍓fresa + arándano</p>
+        <span>S/ 10.00</span>
+        <button class="agregar-carrito" 
+          data-nombre="EcoDrink Berry" 
+          data-precio="10">Agregar al carrito</button>
+      </div>
+
+            <div class="producto">
+        <img src="https://images.pexels.com/photos/7615809/pexels-photo-7615809.jpeg" alt="EcoDrink Energy">
+        <h3>EcoDrink Energy</h3>
+        <p>  🍯🍋 limón + miel + jengibre</p>
+        <span>S/ 10.00</span>
+        <button class="agregar-carrito" 
+          data-nombre="EcoDrink Energy" 
+          data-precio="10">Agregar al carrito</button>
+      </div>
+
+            <div class="producto">
+        <img src="https://images.pexels.com/photos/616833/pexels-photo-616833.jpeg" alt="EcoDrink Green">
+        <h3>EcoDrink Green</h3>
+        <p>🥒🍏 pepino + manzana verde + menta</p>
+        <span>S/ 10.50</span>
+        <button class="agregar-carrito" 
+          data-nombre="EcoDrink Green" 
+          data-precio="10.5">Agregar al carrito</button>
+      </div>
+
+            <div class="producto">
+        <img src="https://images.pexels.com/photos/28575243/pexels-photo-28575243.jpeg" alt="EcoDrink Exotic">
+        <h3>EcoDrink Exotic</h3>
+        <p> 🍍🥭🥥piña + mango + coco</p>
+        <span>S/ 11.00</span>
+        <button class="agregar-carrito" 
+          data-nombre="EcoDrink Exotic" 
+          data-precio="11">Agregar al carrito</button>
+      </div>
+
+            <div class="producto">
+        <img src="https://images.pexels.com/photos/5668182/pexels-photo-5668182.jpeg" alt="EcoDrink Power Berry">
+        <h3>EcoDrink Power Berry</h3>
+        <p> 🍓🫐 fresa + arándano + mora</p>
+        <span>S/ 11.50</span>
+        <button class="agregar-carrito" 
+          data-nombre="EcoDrink Power Berry" 
+          data-precio="11.5">Agregar al carrito</button>
+      </div>
+
+    </div>
+  </main>
+
+  <script src="cart.js"></script>
+</body>
+</html>

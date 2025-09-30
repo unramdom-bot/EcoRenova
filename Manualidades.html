@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comida - EcoMarket</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Barra de navegación -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">EcoMarket</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="comida.html" class="active">Comida</a></li>
+        <li><a href="carrito.html">Carrito 🛒</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Sección de productos -->
+  <main class="productos-container">
+    <h1> Sección de ECODRINK</h1>
+    <div class="productos-grid">
+      
+      <div class="producto">
+        <img src="imagenes/comida.jpg" alt="EcoSkin">
+        <h3>EcoSkin</h3>
+        <p></p>
+        <span>S/ 5.00</span>
+        <button class="agregar-carrito" 
+          data-nombre="EcoSkin" 
+          data-precio="5">Agregar al carrito</button>
+      </div>
+
+      <div class="producto">
+        <img src="imagenes/jabones.jpg" alt="Pan integral">
+        <h3>Pan Integral</h3>
+        <p>Pan artesanal hecho con granos integrales.</p>
+        <span>S/ 3.50</span>
+        <button class="agregar-carrito" 
+          data-nombre="Pan Integral" 
+          data-precio="3.5">Agregar al carrito</button>
+      </div>
+
+      <div class="producto">
+        <img src="img/verduras.jpg" alt="Verduras surtidas">
+        <h3>Verduras Surtidas</h3>
+        <p>Mezcla de verduras frescas y ecológicas.</p>
+        <span>S/ 12.00</span>
+        <button class="agregar-carrito" 
+          data-nombre="Verduras Surtidas" 
+          data-precio="12">Agregar al carrito</button>
+      </div>
+
+    </div>
+  </main>
+
+  <script src="cart.js"></script>
+</body>
+</html>

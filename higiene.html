@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comida - EcoMarket</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Barra de navegación -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">EcoMarket</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="comida.html" class="active">Comida</a></li>
+        <li><a href="carrito.html">Carrito 🛒</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Sección de productos -->
+  <main class="productos-container">
+    <h1> Sección de EcoSkin</h1>
+    <h2>Costo: </h2>
+        <h3>S/ 8 (jabón pequeño, individual).</h3>
+        <h3>S/ 10 (jabón mediano, con aroma especial).</h3>
+        <h3>S/ 12 (edición premium, con mezcla de esencias o ingredientes extra como avena o café).</h3> 
+    <div class="productos-grid">
+      
+      <div class="producto">
+        <img src="https://images.pexels.com/photos/31517685/pexels-photo-31517685.jpeg" alt="EcoSkin">
+        <h3>🌸 Lavanda</h3>
+        <p>Relajante y calmante.</p>
+        <span>S/ 8.00</span>
+        <button class="agregar-carrito" 
+          data-nombre="EcoSkin" 
+          data-precio="8">Agregar al carrito</button>
+      </div>
+
+      <div class="producto">
+        <img src="https://images.pexels.com/photos/10853717/pexels-photo-10853717.jpeg" alt="EcoSkin">
+        <h3>🍋Limón</h3>
+        <p>Fresco, energizante y antibacterial.</p>
+        <span>S/ 8.00</span>
+        <button class="agregar-carrito" 
+          data-nombre="EcoSkin" 
+          data-precio="8">Agregar al carrito</button>
+      </div>
+
+        <div class="producto">
+        <img src="https://shop.tiendasmadretierra.mx/cdn/shop/products/4-DSC_2773.jpg?v=1623608170" alt="EcoSkin">
+        <h3>🌿 Hierbabuena o menta </h3>
+        <p>Refrescante y aromático.</p>
+        <span>S/ 8.00</span>
+        <button class="agregar-carrito" 
+          data-nombre="EcoSkin" 
+          data-precio="8">Agregar al carrito</button>
+      </div>
+
+        <div class="producto">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBHujX6ZznhM17SLy5G4ufh-uy--l4XHwPmg&s" alt="EcoSkin">
+        <h3>☕ Café </h3>
+        <p>Exfoliante natural y revitalizante.</p>
+        <span>S/ 8.00</span>
+        <button class="agregar-carrito" 
+          data-nombre="EcoSkin" 
+          data-precio="8">Agregar al carrito</button>
+      </div>
+
+            <div class="producto">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxL2TSuj1SzyTkDzQKEbmRvzrnR-QgHjkLEg&s" alt="EcoSkin">
+        <h3>🪻Romero </h3>
+        <p> Limpieza profunda y fragancia herbal.</p>
+        <span>S/ 8.00</span>
+        <button class="agregar-carrito" 
+          data-nombre="EcoSkin" 
+          data-precio="8">Agregar al carrito</button>
+      </div>
+
+            <div class="producto">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2CfoPscub5vFTDcQXpc7PStCySlK16w5fDQ&s" alt="EcoSkin">
+        <h3>🥥 Coco </h3>
+        <p>Hidratante y con aroma tropical.</p>
+        <span>S/ 8.00</span>
+        <button class="agregar-carrito" 
+          data-nombre="EcoSkin" 
+          data-precio="8">Agregar al carrito</button>
+      </div>
+
+            <div class="producto">
+        <img src="https://www.gob.mx/cms/uploads/article/main_image/69393/jabon_de_nara_nja.jpg" alt="EcoSkin">
+        <h3>🍊 Naranja dulce</h3>
+        <p>Refrescante y cítrico.</p>
+        <span>S/ 8.00</span>
+        <button class="agregar-carrito" 
+          data-nombre="EcoSkin" 
+          data-precio="8">Agregar al carrito</button>
+      </div>
+
+    </div>
+  </main>
+
+  <script src="cart.js"></script>
+</body>
+</html>
