@@ -187,7 +187,7 @@ body {
 
 /* Fondo de la página principal */
 body.index {
-  background: url("ruta/a/tu-imagen.jpg") no-repeat center center fixed;
+  background: url("imagenes/fondo.jpg") no-repeat center center fixed;
   background-size: cover;
 }
 
@@ -454,3 +454,4 @@ body {
     border-radius: 5px;
     cursor: pointer;
 }
+
