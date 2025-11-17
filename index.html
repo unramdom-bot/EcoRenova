@@ -1,60 +1,1951 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ECORENOVA - Inicio</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoRenova - Pequeñas decisiones, grandes cambios para el planeta</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&amp;family=Quicksand:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --verde-oscuro: #7a9a7e; /* Verde suave y apagado de la imagen */
+            --verde-medio: #95b59a; /* Verde medio claro */
+            --verde-claro: #b8d0be; /* Verde muy claro */
+            --beige: #f5e9d9;
+            --crema: #f8f3e9;
+            --amarillo: #f9c74f;
+            --amarillo-suave: #f9d976;
+            --gris-claro: #e8e0d5;
+            --marron: #8b5a3c;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Quicksand', sans-serif;
+            background-color: var(--crema);
+            color: var(--verde-oscuro);
+            line-height: 1.6;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: 
+                url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23b8d0be' fill-opacity='0.15' fill-rule='evenodd'/%3E%3C/svg%3E"),
+                url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23f9d976' fill-opacity='0.05'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            opacity: 0.5;
+            z-index: -1;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background-color: var(--verde-oscuro);
+            color: white;
+            padding: 20px 0;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: 'Kalam', cursive;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: white;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo i {
+            margin-right: 10px;
+            color: var(--amarillo);
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 25px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            padding: 8px 15px;
+            border-radius: 20px;
+            position: relative;
+        }
+
+        nav ul li a:hover {
+            background-color: var(--verde-medio);
+            transform: translateY(-2px);
+        }
+
+        nav ul li a.active {
+            background-color: var(--amarillo);
+            color: var(--verde-oscuro);
+        }
+
+        /* Sección INICIO */
+        #inicio {
+            padding: 60px 0;
+            position: relative;
+        }
+
+        .hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 40px 20px;
+            background-color: var(--beige);
+            border-radius: 20px;
+            margin-bottom: 50px;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+        }
+
+        .hero::before {
+            content: "";
+            position: absolute;
+            top: -20px;
+            right: -20px;
+            width: 150px;
+            height: 150px;
+            background-color: var(--amarillo);
+            border-radius: 50%;
+            opacity: 0.2;
+            z-index: 0;
+        }
+
+        .hero::after {
+            content: "";
+            position: absolute;
+            bottom: -30px;
+            left: -30px;
+            width: 200px;
+            height: 200px;
+            background-color: var(--verde-claro);
+            border-radius: 50%;
+            opacity: 0.15;
+            z-index: 0;
+        }
+
+        .hero h1 {
+            font-family: 'Kalam', cursive;
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: var(--verde-oscuro);
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            max-width: 800px;
+            margin-bottom: 30px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-description {
+            background-color: white;
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 40px;
+            max-width: 800px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-description p {
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+        }
+
+        .featured-products {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-top: 40px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .product-card {
+            background-color: white;
+            border-radius: 15px;
+            padding: 20px;
+            width: 280px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .product-card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(to right, var(--verde-oscuro), var(--verde-claro));
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .product-card h3 {
+            font-family: 'Kalam', cursive;
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: var(--verde-oscuro);
+        }
+
+        .product-card p {
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        .product-card .price {
+            font-weight: 700;
+            font-size: 1.2rem;
+            color: var(--verde-medio);
+            margin-bottom: 15px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--verde-oscuro);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        .btn:hover {
+            background-color: var(--verde-medio);
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn-yellow {
+            background-color: var(--amarillo);
+            color: var(--verde-oscuro);
+        }
+
+        .btn-yellow:hover {
+            background-color: var(--amarillo-suave);
+        }
+
+        /* Sección CONTACTO */
+        #contacto {
+            padding: 60px 0;
+            background-color: var(--beige);
+            position: relative;
+        }
+
+        #contacto::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 200px;
+            height: 200px;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cpath fill='%23f9c74f' d='M50 50m-40 0a40,40 0 1,1 80,0a40,40 0 1,1 -80,0'/%3E%3Cpath fill='%237a9a7e' d='M50 50m-30 0a30,30 0 1,1 60,0a30,30 0 1,1 -60,0'/%3E%3Cpath fill='%23f9c74f' d='M50 50m-20 0a20,20 0 1,1 40,0a20,20 0 1,1 -40,0'/%3E%3C/svg%3E");
+            background-size: contain;
+            opacity: 0.1;
+            z-index: 0;
+        }
+
+        .section-title {
+            font-family: 'Kalam', cursive;
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 40px;
+            color: var(--verde-oscuro);
+            position: relative;
+            z-index: 1;
+        }
+
+        .contact-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            justify-content: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .contact-form {
+            background-color: white;
+            padding: 30px;
+            border-radius: 15px;
+            width: 100%;
+            max-width: 500px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+            position: relative;
+        }
+
+        .contact-form::before {
+            content: "";
+            position: absolute;
+            top: -15px;
+            right: -15px;
+            width: 80px;
+            height: 80px;
+            background-color: var(--amarillo);
+            border-radius: 50%;
+            opacity: 0.2;
+            z-index: -1;
+        }
+
+        .contact-form h3 {
+            font-family: 'Kalam', cursive;
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: var(--verde-oscuro);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: var(--verde-oscuro);
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px 15px;
+            border: 2px solid var(--gris-claro);
+            border-radius: 10px;
+            font-family: 'Quicksand', sans-serif;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--verde-claro);
+            box-shadow: 0 0 0 3px rgba(184, 208, 190, 0.2);
+        }
+
+        .contact-info {
+            background-color: white;
+            padding: 30px;
+            border-radius: 15px;
+            width: 100%;
+            max-width: 500px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+            position: relative;
+        }
+
+        .contact-info::after {
+            content: "";
+            position: absolute;
+            bottom: -15px;
+            left: -15px;
+            width: 100px;
+            height: 100px;
+            background-color: var(--verde-claro);
+            border-radius: 50%;
+            opacity: 0.2;
+            z-index: -1;
+        }
+
+        .contact-info h3 {
+            font-family: 'Kalam', cursive;
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: var(--verde-oscuro);
+        }
+
+        .info-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+
+        .info-item i {
+            color: var(--verde-medio);
+            margin-right: 15px;
+            font-size: 1.2rem;
+            margin-top: 5px;
+        }
+
+        .info-item p {
+            margin: 0;
+        }
+
+        .social-media {
+            display: flex;
+            gap: 15px;
+            margin-top: 25px;
+        }
+
+        .social-media a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 45px;
+            height: 45px;
+            background-color: var(--verde-oscuro);
+            color: white;
+            border-radius: 50%;
+            transition: all 0.3s ease;
+        }
+
+        .social-media a:hover {
+            background-color: var(--verde-medio);
+            transform: translateY(-5px);
+        }
+
+        .map-container {
+            width: 100%;
+            height: 200px;
+            background-color: var(--gris-claro);
+            border-radius: 10px;
+            margin-top: 20px;
+            overflow: hidden;
+            position: relative;
+            border: 2px solid var(--verde-claro);
+        }
+
+        .map-content {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, var(--verde-claro) 0%, var(--verde-medio) 100%);
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        .map-content::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%23ffffff' fill-opacity='0.1' d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill-rule='evenodd'/%3E%3C/svg%3E");
+            opacity: 0.3;
+        }
+
+        .map-icon {
+            font-size: 3rem;
+            color: var(--verde-oscuro);
+            margin-bottom: 15px;
+        }
+
+        .map-title {
+            font-family: 'Kalam', cursive;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--verde-oscuro);
+            margin-bottom: 10px;
+        }
+
+        .map-address {
+            font-size: 1.1rem;
+            color: var(--verde-oscuro);
+            margin-bottom: 5px;
+            font-weight: 600;
+        }
+
+        .map-details {
+            font-size: 0.9rem;
+            color: var(--verde-oscuro);
+            margin-bottom: 15px;
+            line-height: 1.4;
+        }
+
+        .map-marker {
+            display: inline-block;
+            background-color: var(--amarillo);
+            color: var(--verde-oscuro);
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-weight: 600;
+            font-size: 0.8rem;
+            margin-top: 10px;
+        }
+
+        /* Sección TIENDA */
+        #tienda {
+            padding: 60px 0;
+        }
+
+        .category-tabs {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .category-tab {
+            padding: 12px 25px;
+            background-color: white;
+            border: 2px solid var(--verde-oscuro);
+            border-radius: 25px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 1.1rem;
+        }
+
+        .category-tab.active {
+            background-color: var(--verde-oscuro);
+            color: white;
+        }
+
+        .category-tab:hover {
+            background-color: var(--verde-medio);
+            color: white;
+            border-color: var(--verde-medio);
+        }
+
+        .products-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .shop-product {
+            background-color: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .shop-product:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
+        }
+
+        .shop-product .product-image {
+            height: 200px;
+            background-color: var(--beige);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .shop-product .product-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: all 0.3s ease;
+        }
+
+        .shop-product:hover .product-image img {
+            transform: scale(1.05);
+        }
+
+        .shop-product .product-badge {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background-color: var(--amarillo);
+            color: var(--verde-oscuro);
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        .shop-product .product-info {
+            padding: 20px;
+        }
+
+        .shop-product h3 {
+            font-family: 'Kalam', cursive;
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: var(--verde-oscuro);
+        }
+
+        .shop-product p {
+            margin-bottom: 15px;
+            color: #555;
+            font-size: 0.95rem;
+        }
+
+        .shop-product .product-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .shop-product .price {
+            font-weight: 700;
+            font-size: 1.2rem;
+            color: var(--verde-medio);
+        }
+
+        .quantity-selector {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .quantity-selector button {
+            width: 30px;
+            height: 30px;
+            background-color: var(--verde-claro);
+            border: none;
+            border-radius: 50%;
+            color: var(--verde-oscuro);
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .quantity-selector button:hover {
+            background-color: var(--verde-medio);
+            color: white;
+        }
+
+        .quantity-selector input {
+            width: 50px;
+            height: 30px;
+            text-align: center;
+            border: 1px solid var(--gris-claro);
+            margin: 0 10px;
+            border-radius: 5px;
+        }
+
+        .size-selector {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+
+        .size-option {
+            flex: 1;
+            padding: 8px;
+            border: 2px solid var(--gris-claro);
+            border-radius: 8px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .size-option.active {
+            border-color: var(--verde-oscuro);
+            background-color: var(--verde-claro);
+        }
+
+        .size-option:hover {
+            border-color: var(--verde-medio);
+        }
+
+        .pricing-info {
+            background-color: var(--beige);
+            padding: 20px;
+            border-radius: 15px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        .pricing-info h3 {
+            font-family: 'Kalam', cursive;
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: var(--verde-oscuro);
+        }
+
+        .pricing-info ul {
+            list-style: none;
+        }
+
+        .pricing-info li {
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 8px;
+            border-bottom: 1px dashed var(--gris-claro);
+        }
+
+        .pricing-info li:last-child {
+            border-bottom: none;
+        }
+
+        /* Sección CARRITO */
+        #carrito {
+            padding: 60px 0;
+            background-color: var(--beige);
+        }
+
+        .cart-container {
+            background-color: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        .cart-empty {
+            text-align: center;
+            padding: 40px 0;
+        }
+
+        .cart-empty i {
+            font-size: 4rem;
+            color: var(--gris-claro);
+            margin-bottom: 20px;
+        }
+
+        .cart-empty p {
+            font-size: 1.3rem;
+            color: #777;
+            margin-bottom: 30px;
+        }
+
+        .cart-items {
+            margin-bottom: 30px;
+        }
+
+        .cart-item {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            border-bottom: 1px solid var(--gris-claro);
+        }
+
+        .cart-item img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-right: 20px;
+        }
+
+        .cart-item-info {
+            flex-grow: 1;
+        }
+
+        .cart-item-info h3 {
+            font-family: 'Kalam', cursive;
+            font-size: 1.3rem;
+            margin-bottom: 5px;
+            color: var(--verde-oscuro);
+        }
+
+        .cart-item-info p {
+            color: #777;
+            margin-bottom: 10px;
+        }
+
+        .cart-item-price {
+            font-weight: 700;
+            font-size: 1.1rem;
+            color: var(--verde-medio);
+        }
+
+        .cart-item-actions {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+
+        .cart-item-quantity {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .cart-item-quantity button {
+            width: 30px;
+            height: 30px;
+            background-color: var(--verde-claro);
+            border: none;
+            border-radius: 50%;
+            color: var(--verde-oscuro);
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .cart-item-quantity button:hover {
+            background-color: var(--verde-medio);
+            color: white;
+        }
+
+        .cart-item-quantity span {
+            margin: 0 15px;
+            font-weight: 600;
+        }
+
+        .cart-item-remove {
+            background: none;
+            border: none;
+            color: #e74c3c;
+            cursor: pointer;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+        }
+
+        .cart-item-remove:hover {
+            color: #c0392b;
+        }
+
+        .cart-summary {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+            border-top: 2px solid var(--gris-claro);
+        }
+
+        .cart-total {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--verde-oscuro);
+        }
+
+        .cart-total span {
+            color: var(--verde-medio);
+        }
+
+        /* Modal de confirmación */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal-content {
+            background-color: white;
+            padding: 40px;
+            border-radius: 15px;
+            max-width: 500px;
+            text-align: center;
+            position: relative;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: #777;
+        }
+
+        .modal-close:hover {
+            color: var(--verde-oscuro);
+        }
+
+        .modal-icon {
+            font-size: 4rem;
+            color: var(--verde-medio);
+            margin-bottom: 20px;
+        }
+
+        .modal h3 {
+            font-family: 'Kalam', cursive;
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            color: var(--verde-oscuro);
+        }
+
+        .modal p {
+            margin-bottom: 25px;
+            line-height: 1.6;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--verde-oscuro);
+            color: white;
+            padding: 40px 0 20px;
+        }
+
+        .footer-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-bottom: 30px;
+        }
+
+        .footer-section {
+            width: 100%;
+            margin-bottom: 30px;
+        }
+
+        .footer-section h3 {
+            font-family: 'Kalam', cursive;
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: var(--amarillo);
+        }
+
+        .footer-section p {
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-section ul li a {
+            color: white;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .footer-section ul li a:hover {
+            color: var(--amarillo);
+            padding-left: 5px;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            nav ul li {
+                margin: 5px;
+            }
+
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+
+            .hero p {
+                font-size: 1.2rem;
+            }
+
+            .contact-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .cart-item {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .cart-item img {
+                margin-right: 0;
+                margin-bottom: 15px;
+            }
+
+            .cart-item-actions {
+                align-items: center;
+                margin-top: 15px;
+            }
+
+            .footer-content {
+                flex-direction: column;
+            }
+        }
+
+        /* Doodles y elementos decorativos */
+        .doodle {
+            position: absolute;
+            z-index: -1;
+            opacity: 0.6;
+        }
+
+        .doodle-1 {
+            top: 10%;
+            left: 5%;
+            width: 100px;
+            height: 100px;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath fill='none' stroke='%23f9c74f' stroke-width='2' d='M20,50 Q30,20 50,30 T80,50'/%3E%3Cpath fill='none' stroke='%23f9c74f' stroke-width='2' d='M20,60 Q30,90 50,80 T80,60'/%3E%3C/svg%3E");
+        }
+
+        .doodle-2 {
+            bottom: 15%;
+            right: 5%;
+            width: 120px;
+            height: 120px;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath fill='none' stroke='%23b8d0be' stroke-width='2' d='M50,10 L60,40 L90,40 L65,60 L75,90 L50,70 L25,90 L35,60 L10,40 L40,40 Z'/%3E%3C/svg%3E");
+        }
+
+        .recycle-icon {
+            position: absolute;
+            width: 60px;
+            height: 60px;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%237a9a7e' d='M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4M12,6A6,6 0 0,0 6,12A6,6 0 0,0 12,18A6,6 0 0,0 18,12A6,6 0 0,0 12,6M12,8A4,4 0 0,1 16,12A4,4 0 0,1 12,16A4,4 0 0,1 8,12A4,4 0 0,1 12,8Z'/%3E%3C/svg%3E");
+            opacity: 0.3;
+        }
+
+        .recycle-1 {
+            top: 30%;
+            right: 10%;
+        }
+
+        .recycle-2 {
+            bottom: 20%;
+            left: 8%;
+        }
+
+        /* Animaciones */
+        @keyframes float {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        .floating {
+            animation: float 4s ease-in-out infinite;
+        }
+
+        /* Estilos para las secciones ocultas */
+        .section {
+            display: none;
+        }
+
+        .section.active {
+            display: block;
+        }
+
+        /* Estilos para el efecto de papel reciclado */
+        .paper-texture {
+            background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%238b5a3c' fill-opacity='0.03' fill-rule='evenodd'/%3E%3C/svg%3E");
+        }
+    </style>
 </head>
 <body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="#" class="logo">
+                    <i class="fas fa-leaf"></i>
+                    EcoRenova
+                </a>
+                <nav>
+                    <ul>
+                        <li><a href="#inicio" class="nav-link active">INICIO</a></li>
+                        <li><a href="#tienda" class="nav-link">TIENDA</a></li>
+                        <li><a href="#carrito" class="nav-link">CARRITO</a></li>
+                        <li><a href="#contacto" class="nav-link">CONTACTO</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
 
-  <!-- Barra de navegación -->
-  <header>
-    <nav class="navbar">
-      <div class="logo">ECORENOVA</div>
-      <ul class="nav-links">
-        <li><a href="index.html" class="active">Inicio</a></li>
-        <li><a href="productos.html">Productos</a></li>
-        <li><a href="carrito.html">Carrito 🛒</a></li>
-        <li><a href="#contacto">Contáctenos</a></li>
-      </ul>
-    </nav>
-  </header>
+    <!-- Sección INICIO -->
+    <section id="inicio" class="section active">
+        <div class="container">
+            <div class="hero">
+                <div class="doodle doodle-1 floating"></div>
+                <div class="doodle doodle-2 floating"></div>
+                <div class="recycle-icon recycle-1 floating"></div>
+                <div class="recycle-icon recycle-2 floating"></div>
+                
+                <h1>Pequeñas decisiones, grandes cambios para el planeta</h1>
+                
+                <div class="hero-description">
+                    <p>EcoRenova es un proyecto estudiantil innovador que promueve hábitos ecológicos y saludables. Creemos que cada pequeña acción cuenta y que juntos podemos marcar la diferencia para nuestro planeta.</p>
+                    <p>Nuestra misión es ofrecer productos sostenibles que cuiden tanto de ti como del medio ambiente, combinando calidad, diseño y conciencia ecológica en cada artículo.</p>
+                </div>
+                
+                <div class="featured-products">
+                    <div class="product-card">
+                        <img src="img/1.png" alt="Jabones Ecológicos">
+                        <h3>Jabones Ecológicos</h3>
+                        <p>Productos de higiene naturales, libres de químicos y empaquetados de forma sostenible.</p>
+                        <div class="price">Desde S/ 3.75</div>
+                        <a href="#tienda" class="btn btn-yellow">Ver productos</a>
+                    </div>
+                    
+                    <div class="product-card">
+                        <img src="img/2.png" alt="Alimentos Saludables">
+                        <h3>Alimentos Saludables</h3>
+                        <p>Deliciosas opciones nutritivas y orgánicas que benefician tu salud y el planeta.</p>
+                        <div class="price">Desde S/ 2.00</div>
+                        <a href="#tienda" class="btn btn-yellow">Ver productos</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <!-- Contenido principal -->
- <main class="main-container">
-  <div class="content-box">
-    <h1>Bienvenido a EcoMarket</h1>
-    <p>
-      Nuestra misión es transformar residuos en productos útiles, ecológicos y de calidad.
-      Trabajamos para un futuro sostenible con responsabilidad ambiental.
-    </p>
-    <p>
-      Descubre nuestras secciones de productos y únete al cambio 🌱.
-    </p>
-  </div>
- </main>
+    <!-- Sección TIENDA -->
+    <section id="tienda" class="section">
+        <div class="container">
+            <h2 class="section-title">Nuestra Tienda Ecológica</h2>
+            
+            <div class="category-tabs">
+                <div class="category-tab active" data-category="higiene">
+                    <i class="fas fa-soap"></i> Higiene (EcoSkin)
+                </div>
+                <div class="category-tab" data-category="comida">
+                    <i class="fas fa-apple-alt"></i> Comida Ecológica
+                </div>
+            </div>
+            
+            <div class="products-container">
+                <!-- Productos de Higiene -->
+                <div class="shop-product" data-category="higiene">
+                    <div class="product-image">
+                        <img src="img/3.png" alt="Jabón de Hierbabuena">
+                        <div class="product-badge">EcoSkin</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Hierbabuena o Menta</h3>
+                        <p>Refrescante y aromático. Ideal para una sensación de limpieza duradera y un aroma revitalizante.</p>
+                        
+                        <div class="size-selector">
+                            <div class="size-option active" data-size="small" data-price="3.75">
+                                <div>Pequeño (50g)</div>
+                                <div>S/ 3.75</div>
+                            </div>
+                            <div class="size-option" data-size="large" data-price="6.25">
+                                <div>Grande (100g)</div>
+                                <div>S/ 6.25</div>
+                            </div>
+                        </div>
+                        
+                        <div class="quantity-selector">
+                            <button class="decrease-qty">-</button>
+                            <input type="number" value="1" min="1" class="product-qty">
+                            <button class="increase-qty">+</button>
+                        </div>
+                        <div class="product-footer">
+                            <div class="price">S/ 3.75</div>
+                            <button class="btn add-to-cart" data-name="Hierbabuena o Menta" data-price="3.75" data-size="small" data-category="higiene">Añadir</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="shop-product" data-category="higiene">
+                    <div class="product-image">
+                        <img src="img/4.png" alt="Jabón de Romero">
+                        <div class="product-badge">EcoSkin</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Romero</h3>
+                        <p>Limpieza profunda y fragancia herbal. Perfecto para purificar la piel y dejar un aroma natural duradero.</p>
+                        
+                        <div class="size-selector">
+                            <div class="size-option active" data-size="small" data-price="3.75">
+                                <div>Pequeño (50g)</div>
+                                <div>S/ 3.75</div>
+                            </div>
+                            <div class="size-option" data-size="large" data-price="6.25">
+                                <div>Grande (100g)</div>
+                                <div>S/ 6.25</div>
+                            </div>
+                        </div>
+                        
+                        <div class="quantity-selector">
+                            <button class="decrease-qty">-</button>
+                            <input type="number" value="1" min="1" class="product-qty">
+                            <button class="increase-qty">+</button>
+                        </div>
+                        <div class="product-footer">
+                            <div class="price">S/ 3.75</div>
+                            <button class="btn add-to-cart" data-name="Romero" data-price="3.75" data-size="small" data-category="higiene">Añadir</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="shop-product" data-category="higiene">
+                    <div class="product-image">
+                        <img src="img/5.png" alt="Jabón de Coco">
+                        <div class="product-badge">EcoSkin</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Coco</h3>
+                        <p>Hidratante y con aroma tropical. Nutre profundamente la piel mientras la protege con sus propiedades naturales.</p>
+                        
+                        <div class="size-selector">
+                            <div class="size-option active" data-size="small" data-price="3.75">
+                                <div>Pequeño (50g)</div>
+                                <div>S/ 3.75</div>
+                            </div>
+                            <div class="size-option" data-size="large" data-price="6.25">
+                                <div>Grande (100g)</div>
+                                <div>S/ 6.25</div>
+                            </div>
+                        </div>
+                        
+                        <div class="quantity-selector">
+                            <button class="decrease-qty">-</button>
+                            <input type="number" value="1" min="1" class="product-qty">
+                            <button class="increase-qty">+</button>
+                        </div>
+                        <div class="product-footer">
+                            <div class="price">S/ 3.75</div>
+                            <button class="btn add-to-cart" data-name="Coco" data-price="3.75" data-size="small" data-category="higiene">Añadir</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="shop-product" data-category="higiene">
+                    <div class="product-image">
+                        <img src="img/6.png" alt="Jabón de Lavanda">
+                        <div class="product-badge">EcoSkin</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Lavanda</h3>
+                        <p>Relajante y calmante. El aceite esencial de lavanda ayuda a reducir el estrés y mejora la calidad del sueño.</p>
+                        
+                        <div class="size-selector">
+                            <div class="size-option active" data-size="small" data-price="3.75">
+                                <div>Pequeño (50g)</div>
+                                <div>S/ 3.75</div>
+                            </div>
+                            <div class="size-option" data-size="large" data-price="6.25">
+                                <div>Grande (100g)</div>
+                                <div>S/ 6.25</div>
+                            </div>
+                        </div>
+                        
+                        <div class="quantity-selector">
+                            <button class="decrease-qty">-</button>
+                            <input type="number" value="1" min="1" class="product-qty">
+                            <button class="increase-qty">+</button>
+                        </div>
+                        <div class="product-footer">
+                            <div class="price">S/ 3.75</div>
+                            <button class="btn add-to-cart" data-name="Lavanda" data-price="3.75" data-size="small" data-category="higiene">Añadir</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="shop-product" data-category="higiene">
+                    <div class="product-image">
+                        <img src="img/7.png" alt="Jabón de Limón">
+                        <div class="product-badge">EcoSkin</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Limón</h3>
+                        <p>Fresco, energizante y antibacterial. Ideal para iniciar el día con vitalidad o para pieles grasas.</p>
+                        
+                        <div class="size-selector">
+                            <div class="size-option active" data-size="small" data-price="3.75">
+                                <div>Pequeño (50g)</div>
+                                <div>S/ 3.75</div>
+                            </div>
+                            <div class="size-option" data-size="large" data-price="6.25">
+                                <div>Grande (100g)</div>
+                                <div>S/ 6.25</div>
+                            </div>
+                        </div>
+                        
+                        <div class="quantity-selector">
+                            <button class="decrease-qty">-</button>
+                            <input type="number" value="1" min="1" class="product-qty">
+                            <button class="increase-qty">+</button>
+                        </div>
+                        <div class="product-footer">
+                            <div class="price">S/ 3.75</div>
+                            <button class="btn add-to-cart" data-name="Limón" data-price="3.75" data-size="small" data-category="higiene">Añadir</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Productos de Comida Ecológica -->
+                <div class="shop-product" data-category="comida" style="display:none;">
+                    <div class="product-image">
+                        <img src="img/8.png" alt="EcoRelax LimonZen">
+                        <div class="product-badge">EcoRelax</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>EcoRelax LimonZen</h3>
+                        <p>Sabor fresco y ligero que ayuda a calmar la mente y refrescar el día.</p>
+                        
+                        <div class="quantity-selector">
+                            <button class="decrease-qty">-</button>
+                            <input type="number" value="1" min="1" class="product-qty">
+                            <button class="increase-qty">+</button>
+                        </div>
+                        <div class="product-footer">
+                            <div class="price">S/ 2.00</div>
+                            <button class="btn add-to-cart" data-name="EcoRelax LimonZen" data-price="2.00" data-category="comida">Añadir</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="shop-product" data-category="comida" style="display:none;">
+                    <div class="product-image">
+                        <img src="img/9.png" alt="EcoRelax MaracuyáCalm">
+                        <div class="product-badge">EcoRelax</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>EcoRelax MaracuyáCalm</h3>
+                        <p>Toque tropical que relaja, suaviza el ánimo y aporta equilibrio.</p>
+                        
+                        <div class="quantity-selector">
+                            <button class="decrease-qty">-</button>
+                            <input type="number" value="1" min="1" class="product-qty">
+                            <button class="increase-qty">+</button>
+                        </div>
+                        <div class="product-footer">
+                            <div class="price">S/ 2.50</div>
+                            <button class="btn add-to-cart" data-name="EcoRelax MaracuyáCalm" data-price="2.50" data-category="comida">Añadir</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="shop-product" data-category="comida" style="display:none;">
+                    <div class="product-image">
+                        <img src="img/10.png" alt="EcoSweet Banana Glow">
+                        <div class="product-badge">EcoSweet</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>EcoSweet Banana Glow</h3>
+                        <p>Un muffin natural que reduce el impacto ambiental al usar plátanos muy maduros y procesos simples, evitando desperdicios y contaminación. Además, sus nutrientes aportan bienestar y resaltan la belleza desde adentro.</p>
+                        
+                        <div class="quantity-selector">
+                            <button class="decrease-qty">-</button>
+                            <input type="number" value="1" min="1" class="product-qty">
+                            <button class="increase-qty">+</button>
+                        </div>
+                        <div class="product-footer">
+                            <div class="price">S/ 2.50</div>
+                            <button class="btn add-to-cart" data-name="EcoSweet Banana Glow" data-price="2.50" data-category="comida">Añadir</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="shop-product" data-category="comida" style="display:none;">
+                    <div class="product-image">
+                        <img src="img/11.png" alt="EcoCrunch Avena Mix">
+                        <div class="product-badge">EcoCrunch</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>EcoCrunch Avena Mix</h3>
+                        <p>Una galleta natural y artesanal que evita químicos y desperdicios, ofreciendo una opción deliciosa y amigable con el medio ambiente.</p>
+                        
+                        <div class="quantity-selector">
+                            <button class="decrease-qty">-</button>
+                            <input type="number" value="1" min="1" class="product-qty">
+                            <button class="increase-qty">+</button>
+                        </div>
+                        <div class="product-footer">
+                            <div class="price">S/ 2.00</div>
+                            <button class="btn add-to-cart" data-name="EcoCrunch Avena Mix" data-price="2.00" data-category="comida">Añadir</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Información de precios para la sección Higiene -->
+            <div class="pricing-info" id="higiene-pricing" style="display:block;">
+                <h3>Información de precios y tamaños</h3>
+                <ul>
+                    <li>
+                        <span>Jabón pequeño (50 g)</span>
+                        <span>S/ 3.50 – 4.00</span>
+                    </li>
+                    <li>
+                        <span>Jabón grande (100 g)</span>
+                        <span>S/ 6.00 – 6.50</span>
+                    </li>
+                    <li>
+                        <span>Paquete de 3 jabones pequeños (50 g)</span>
+                        <span>S/ 18.00 – 20.00</span>
+                    </li>
+                    <li>
+                        <span>Paquete de 3 jabones grandes (100 g)</span>
+                        <span>S/ 28.00 – 30.00</span>
+                    </li>
+                </ul>
+            </div>
+            
+            <!-- Información de precios para la sección Comida -->
+            <div class="pricing-info" id="comida-pricing" style="display:none;">
+                <h3>Información de precios</h3>
+                <ul>
+                    <li>
+                        <span>EcoRelax LimonZen</span>
+                        <span>S/ 2.00</span>
+                    </li>
+                    <li>
+                        <span>EcoRelax MaracuyáCalm</span>
+                        <span>S/ 2.50</span>
+                    </li>
+                    <li>
+                        <span>EcoSweet Banana Glow</span>
+                        <span>S/ 2.50</span>
+                    </li>
+                    <li>
+                        <span>EcoCrunch Avena Mix</span>
+                        <span>S/ 2.00</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
 
- <!-- Sección de Contacto -->
-<section id="contacto" class="contact-section">
-  <h2>Contáctenos</h2>
-  <p>Síguenos en nuestras redes y únete a la comunidad EcoMarket 🌱</p>
+    <!-- Sección CARRITO -->
+    <section id="carrito" class="section">
+        <div class="container">
+            <h2 class="section-title">Tu Carrito Ecológico</h2>
+            
+            <div class="cart-container">
+                <div class="cart-empty" id="cart-empty">
+                    <i class="fas fa-shopping-basket"></i>
+                    <p>Tu carrito está vacío</p>
+                    <a href="#tienda" class="btn btn-yellow">Ir a la tienda</a>
+                </div>
+                
+                <div class="cart-content" id="cart-content" style="display:none;">
+                    <div class="cart-items" id="cart-items">
+                        <!-- Los productos del carrito se añadirán aquí dinámicamente -->
+                    </div>
+                    
+                    <div class="cart-summary">
+                        <div class="cart-total">Total: <span id="cart-total">S/ 0.00</span></div>
+                        <button class="btn" id="checkout-btn">Finalizar compra</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <div class="contact-links">
-    <a href="https://www.instagram.com/_ecorenova_?igsh=MThtMTY4ZHhrd2dzbA==" target="_blank" class="contact-btn instagram">
-      📷 Instagram
-    </a>
-  </div>
+    <!-- Sección CONTACTO -->
+    <section id="contacto" class="section">
+        <div class="container">
+            <h2 class="section-title">Contacto</h2>
+            
+            <div class="contact-container">
+                <div class="contact-form">
+                    <h3>Envíanos tu mensaje</h3>
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Nombre</label>
+                            <input type="text" id="name" name="name" required="">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Correo electrónico</label>
+                            <input type="email" id="email" name="email" required="">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Mensaje</label>
+                            <textarea id="message" name="message" rows="5" required=""></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn">Enviar mensaje</button>
+                    </form>
+                </div>
+                
+                <div class="contact-info">
+                    <h3>Información de contacto</h3>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Colegio San José Hermanos Maristas<br>Área de Ciencia Sociales, mesa 2</p>
+                    </div>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <p>Viernes: 8:00 - 15:00<br></p>
+                    </div>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <p>+51 1 1234 5678</p>
+                    </div>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>info@ecorenova.edu</p>
+                    </div>
+                    
+                    <div class="social-media">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                    
+                    <div class="map-container">
+                        <div class="map-content">
+                            <i class="fas fa-map-marked-alt map-icon"></i>
+                            <div class="map-title">Colegio San José Hermanos Maristas</div>
+                            <div class="map-address">Av. José Gálvez 1045, Callao</div>
+                            <div class="map-details">Ubicado en el corazón del distrito de Callao, cerca a la Plaza Perú y el centro comercial.</div>
+                            <div class="map-marker">
+                                <i class="fas fa-location-dot"></i> Punto de encuentro
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <form class="register-form">
-    <h3>Regístrate con tu Gmail</h3>
-    <input type="email" placeholder="Ingresa tu Gmail" required>
-    <button type="submit">Registrarse</button>
-  </form>
-</section>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Sobre EcoRenova</h3>
+                    <p>Somos un proyecto estudiantil comprometido con la sostenibilidad y el cuidado del medio ambiente a través de productos ecológicos y hábitos saludables.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Enlaces rápidos</h3>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#tienda">Tienda</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Productos</h3>
+                    <ul>
+                        <li><a href="#tienda">Higiene (EcoSkin)</a></li>
+                        <li><a href="#tienda">Comida Ecológica</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2023 EcoRenova - Todos los derechos reservados | Proyecto Estudiantil</p>
+            </div>
+        </div>
+    </footer>
 
-  <body class="index-bg">
-    <body class="index">
+    <!-- Modal de confirmación de compra -->
+    <div class="modal" id="checkout-modal">
+        <div class="modal-content">
+            <button class="modal-close" id="close-modal">×</button>
+            <div class="modal-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h3>¡Gracias por tu compra!</h3>
+            <p>Todas las entregas son presenciales. Por favor acérquese al área de Ciencias Sociales para recoger su producto y realizar el pago acordado.</p>
+            <button class="btn" id="modal-ok">Entendido</button>
+        </div>
+    </div>
 
-</body>
-</html>
+    <script>
+        // Navegación entre secciones
+        document.addEventListener('DOMContentLoaded', function() {
+            const navLinks = document.querySelectorAll('.nav-link');
+            const sections = document.querySelectorAll('.section');
+            
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    // Quitar clase active de todos los enlaces y secciones
+                    navLinks.forEach(l => l.classList.remove('active'));
+                    sections.forEach(s => s.classList.remove('active'));
+                    
+                    // Añadir clase active al enlace clicado
+                    this.classList.add('active');
+                    
+                    // Mostrar la sección correspondiente
+                    const targetId = this.getAttribute('href').substring(1);
+                    const targetSection = document.getElementById(targetId);
+                    if (targetSection) {
+                        targetSection.classList.add('active');
+                    }
+                });
+            });
+            
+            // Filtro de categorías en la tienda
+            const categoryTabs = document.querySelectorAll('.category-tab');
+            const shopProducts = document.querySelectorAll('.shop-product');
+            const higienePricing = document.getElementById('higiene-pricing');
+            const comidaPricing = document.getElementById('comida-pricing');
+            
+            categoryTabs.forEach(tab => {
+                tab.addEventListener('click', function() {
+                    // Quitar clase active de todas las pestañas
+                    categoryTabs.forEach(t => t.classList.remove('active'));
+                    
+                    // Añadir clase active a la pestaña clicada
+                    this.classList.add('active');
+                    
+                    // Obtener la categoría seleccionada
+                    const selectedCategory = this.getAttribute('data-category');
+                    
+                    // Mostrar u ocultar productos según la categoría
+                    shopProducts.forEach(product => {
+                        if (product.getAttribute('data-category') === selectedCategory) {
+                            product.style.display = 'block';
+                        } else {
+                            product.style.display = 'none';
+                        }
+                    });
+                    
+                    // Mostrar u ocultar información de precios según la categoría
+                    if (selectedCategory === 'higiene') {
+                        higienePricing.style.display = 'block';
+                        comidaPricing.style.display = 'none';
+                    } else if (selectedCategory === 'comida') {
+                        higienePricing.style.display = 'none';
+                        comidaPricing.style.display = 'block';
+                    }
+                });
+            });
+            
+            // Selector de tamaño para productos de higiene (EcoSkin)
+            document.querySelectorAll('.size-selector').forEach(selector => {
+                selector.addEventListener('click', function(e) {
+                    // Solo procesar si se hizo clic en una opción de tamaño
+                    if (e.target.classList.contains('size-option')) {
+                        // Quitar clase active de todas las opciones de este producto
+                        this.querySelectorAll('.size-option').forEach(opt => {
+                            opt.classList.remove('active');
+                        });
+                        
+                        // Añadir clase active a la opción seleccionada
+                        e.target.classList.add('active');
+                        
+                        // Obtener el precio de la opción seleccionada
+                        const price = e.target.getAttribute('data-price');
+                        
+                        // Actualizar el precio mostrado
+                        const priceElement = this.closest('.product-info').querySelector('.price');
+                        priceElement.textContent = `S/ ${price}`;
+                        
+                        // Actualizar el precio en el botón de añadir al carrito
+                        const addToCartBtn = this.closest('.product-info').querySelector('.add-to-cart');
+                        addToCartBtn.setAttribute('data-price', price);
+                        addToCartBtn.setAttribute('data-size', e.target.getAttribute('data-size'));
+                    }
+                });
+            });
+            
+            // Control de cantidad en los productos
+            document.querySelectorAll('.decrease-qty').forEach(button => {
+                button.addEventListener('click', function() {
+                    const input = this.nextElementSibling;
+                    const currentValue = parseInt(input.value);
+                    if (currentValue > 1) {
+                        input.value = currentValue - 1;
+                    }
+                });
+            });
+            
+            document.querySelectorAll('.increase-qty').forEach(button => {
+                button.addEventListener('click', function() {
+                    const input = this.previousElementSibling;
+                    const currentValue = parseInt(input.value);
+                    input.value = currentValue + 1;
+                });
+            });
+            
+            // Carrito de compras
+            let cart = [];
+            
+            // Añadir productos al carrito
+            document.querySelectorAll('.add-to-cart').forEach(button => {
+                button.addEventListener('click', function() {
+                    const name = this.getAttribute('data-name');
+                    const price = parseFloat(this.getAttribute('data-price'));
+                    const category = this.getAttribute('data-category');
+                    const quantityInput = this.closest('.product-info').querySelector('.product-qty');
+                    const quantity = parseInt(quantityInput.value);
+                    
+                    // Crear un identificador único para el producto
+                    let productId = name;
+                    let sizeText = '';
+                    
+                    // Para productos de higiene, incluir el tamaño
+                    if (category === 'higiene') {
+                        const size = this.getAttribute('data-size');
+                        productId = `${name}-${size}`;
+                        sizeText = size === 'small' ? 'Pequeño (50g)' : 'Grande (100g)';
+                    }
+                    
+                    // Verificar si el producto ya está en el carrito
+                    const existingItem = cart.find(item => item.id === productId);
+                    
+                    if (existingItem) {
+                        // Si ya está, actualizar la cantidad
+                        existingItem.quantity += quantity;
+                    } else {
+                        // Si no está, añadirlo al carrito
+                        cart.push({
+                            id: productId,
+                            name: name,
+                            price: price,
+                            size: sizeText,
+                            quantity: quantity
+                        });
+                    }
+                    
+                    // Resetear la cantidad del producto
+                    quantityInput.value = 1;
+                    
+                    // Actualizar el carrito
+                    updateCart();
+                    
+                    // Mostrar notificación
+                    showNotification('Producto añadido al carrito');
+                });
+            });
+            
+            // Función para actualizar el carrito
+            function updateCart() {
+                const cartEmpty = document.getElementById('cart-empty');
+                const cartContent = document.getElementById('cart-content');
+                const cartItems = document.getElementById('cart-items');
+                const cartTotal = document.getElementById('cart-total');
+                
+                if (cart.length === 0) {
+                    // Si el carrito está vacío
+                    cartEmpty.style.display = 'block';
+                    cartContent.style.display = 'none';
+                } else {
+                    // Si hay productos en el carrito
+                    cartEmpty.style.display = 'none';
+                    cartContent.style.display = 'block';
+                    
+                    // Limpiar el contenido actual del carrito
+                    cartItems.innerHTML = '';
+                    
+                    // Añadir cada producto al carrito
+                    let total = 0;
+                    
+                    cart.forEach((item, index) => {
+                        const itemTotal = item.price * item.quantity;
+                        total += itemTotal;
+                        
+                        const cartItem = document.createElement('div');
+                        cartItem.className = 'cart-item';
+                        
+                        // Mostrar el tamaño si existe
+                        const sizeInfo = item.size ? `<p>Tamaño: ${item.size}</p>` : '';
+                        
+                        cartItem.innerHTML = `
+                            <img src="https://picsum.photos/seed/${item.name.replace(/\s+/g, '')}/100/100.jpg" alt="${item.name}">
+                            <div class="cart-item-info">
+                                <h3>${item.name}</h3>
+                                ${sizeInfo}
+                                <p>Precio unitario: S/ ${item.price.toFixed(2)}</p>
+                                <div class="cart-item-price">S/ ${itemTotal.toFixed(2)}</div>
+                            </div>
+                            <div class="cart-item-actions">
+                                <div class="cart-item-quantity">
+                                    <button class="cart-decrease-qty" data-index="${index}">-</button>
+                                    <span>${item.quantity}</span>
+                                    <button class="cart-increase-qty" data-index="${index}">+</button>
+                                </div>
+                                <button class="cart-item-remove" data-index="${index}"><i class="fas fa-trash"></i></button>
+                            </div>
+                        `;
+                        
+                        cartItems.appendChild(cartItem);
+                    });
+                    
+                    // Actualizar el total
+                    cartTotal.textContent = `S/ ${total.toFixed(2)}`;
+                    
+                    // Añadir eventos a los botones del carrito
+                    document.querySelectorAll('.cart-decrease-qty').forEach(button => {
+                        button.addEventListener('click', function() {
+                            const index = parseInt(this.getAttribute('data-index'));
+                            if (cart[index].quantity > 1) {
+                                cart[index].quantity--;
+                                updateCart();
+                            }
+                        });
+                    });
+                    
+                    document.querySelectorAll('.cart-increase-qty').forEach(button => {
+                        button.addEventListener('click', function() {
+                            const index = parseInt(this.getAttribute('data-index'));
+                            cart[index].quantity++;
+                            updateCart();
+                        });
+                    });
+                    
+                    document.querySelectorAll('.cart-item-remove').forEach(button => {
+                        button.addEventListener('click', function() {
+                            const index = parseInt(this.getAttribute('data-index'));
+                            cart.splice(index, 1);
+                            updateCart();
+                        });
+                    });
+                }
+            }
+            
+            // Finalizar compra
+            document.getElementById('checkout-btn').addEventListener('click', function() {
+                // Mostrar modal de confirmación
+                document.getElementById('checkout-modal').style.display = 'flex';
+                
+                // Vaciar el carrito
+                cart = [];
+                updateCart();
+            });
+            
+            // Cerrar modal
+            document.getElementById('close-modal').addEventListener('click', function() {
+                document.getElementById('checkout-modal').style.display = 'none';
+            });
+            
+            document.getElementById('modal-ok').addEventListener('click', function() {
+                document.getElementById('checkout-modal').style.display = 'none';
+            });
+            
+            // Cerrar modal al hacer clic fuera de él
+            window.addEventListener('click', function(e) {
+                if (e.target === document.getElementById('checkout-modal')) {
+                    document.getElementById('checkout-modal').style.display = 'none';
+                }
+            });
+            
+            // Formulario de contacto
+            document.getElementById('contact-form').addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Obtener los datos del formulario
+                const name = document.getElementById('name').value;
+                const email = document.getElementById('email').value;
+                const message = document.getElementById('message').value;
+                
+                // Aquí se enviarían los datos a un servidor
+                // Por ahora, solo mostramos una notificación
+                showNotification('Mensaje enviado correctamente. Nos pondremos en contacto contigo pronto.');
+                
+                // Resetear el formulario
+                this.reset();
+            });
+            
+            // Función para mostrar notificaciones
+            function showNotification(message) {
+                // Crear elemento de notificación
+                const notification = document.createElement('div');
+                notification.className = 'notification';
+                notification.textContent = message;
+                notification.style.position = 'fixed';
+                notification.style.bottom = '20px';
+                notification.style.right = '20px';
+                notification.style.backgroundColor = 'var(--verde-oscuro)';
+                notification.style.color = 'white';
+                notification.style.padding = '15px 25px';
+                notification.style.borderRadius = '10px';
+                notification.style.boxShadow = '0 5px 15px rgba(0,0,0,0.2)';
+                notification.style.zIndex = '1000';
+                notification.style.transform = 'translateY(100px)';
+                notification.style.opacity = '0';
+                notification.style.transition = 'all 0.3s ease';
+                
+                // Añadir al DOM
+                document.body.appendChild(notification);
+                
+                // Mostrar notificación
+                setTimeout(() => {
+                    notification.style.transform = 'translateY(0)';
+                    notification.style.opacity = '1';
+                }, 100);
+                
+                // Ocultar después de 3 segundos
+                setTimeout(() => {
+                    notification.style.transform = 'translateY(100px)';
+                    notification.style.opacity = '0';
+                    
+                    // Eliminar del DOM
+                    setTimeout(() => {
+                        document.body.removeChild(notification);
+                    }, 300);
+                }, 3000);
+            }
+        });
+    </script>
+
+</body></html>
